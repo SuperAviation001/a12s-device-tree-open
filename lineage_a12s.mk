@@ -22,7 +22,9 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="a12snsxx-user 13 TP1A.220624.014 A127FXXSDDXJ2 release-keys"
+DEVICE_CODENAME := a12s
 
-BUILD_FINGERPRINT := samsung/a12snsxx/a12s:13/TP1A.220624.014/A127FXXSDDXJ2:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="a12snsxx-user 13 TP1A.220624.014 A127FXXSDDXJ2 release-keys" \
+    BuildFingerprint=samsung/a12snsxx/a12s:13/TP1A.220624.014/A127FXXSDDXJ2:user/release-keys \
+    DeviceProduct=$(DEVICE_CODENAME)
